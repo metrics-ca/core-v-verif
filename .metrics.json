@@ -36,7 +36,7 @@
       "description": "Commit sanity for CV32E40P using dynamic test generation",
       "verbose":     "true",
       "tests": {
-        "resultsDir": "/mux-flow/build/results",
+        "resultsDir": "/mux-flow/results",
         "builds":    ["uvmt_cv32e40p"],
         "listCmd":   "/mux-flow/build/repo/bin/cv_regress --core=cv32e40p --file=cv32e40p_ci_check --metrics --outfile=/mux-flow/build/repo/cv32e40p_ci_check.json",
         "listFile":  "/mux-flow/build/repo/cv32e40p_ci_check.json"
