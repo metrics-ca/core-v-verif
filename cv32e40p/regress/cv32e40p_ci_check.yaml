@@ -18,12 +18,14 @@ tests:
     dir: cv32e40p/sim/uvmt
     cmd: make hello-world
     cmd: make test COREV=YES TEST=hello-world
+    iss: no
     
   interrupt_test:
     build: uvmt_cv32e40p
     description: Interrupt directed test  
     dir: cv32e40p/sim/uvmt
     cmd: make test COREV=YES TEST=interrupt_test
+    iss: no
     
   corev_rand_interrupt:
     build: uvmt_cv32e40p
@@ -31,28 +33,33 @@ tests:
     dir: cv32e40p/sim/uvmt
     cmd: make gen_corev-dv test COREV=YES TEST=corev_rand_interrupt
     num: 2
+    iss: no
 
   illegal:
     build: uvmt_cv32e40p
     dir: cv32e40p/sim/uvmt
     cmd: make test COREV=YES TEST=illegal
+    iss: no
 
   debug_test:
     build: uvmt_cv32e40p
     dir: cv32e40p/sim/uvmt
     cmd: make test COREV=YES TEST=debug_test
-
+    iss: no
+ 
   csr_instructions:
     build: uvmt_cv32e40p
     description: CSR Instruction Test
     dir: cv32e40p/sim/uvmt
     cmd: make test COREV=YES TEST=csr_instructions
+    iss: no
 
   riscv_arithmetic_basic_test:
     build: uvmt_cv32e40p
     description: Static riscv-dv arithmetic test 0
     dir: cv32e40p/sim/uvmt
     cmd: make test COREV=YES TEST=riscv_arithmetic_basic_test
+    iss: no
 
   corev_arithmetic_base_test:
     build: uvmt_cv32e40p
@@ -60,6 +67,7 @@ tests:
     dir: cv32e40p/sim/uvmt
     cmd: make gen_corev-dv test COREV=YES TEST=corev_arithmetic_base_test
     num: 2
+    iss: no
 
   corev_rand_instr_test:
     build: uvmt_cv32e40p  
@@ -67,6 +75,7 @@ tests:
     dir: cv32e40p/sim/uvmt
     cmd: make gen_corev-dv test COREV=YES TEST=corev_rand_instr_test
     num: 2
+    iss: no
 
   corev_jump_stress_test:
     build: uvmt_cv32e40p  
@@ -74,4 +83,5 @@ tests:
     dir: cv32e40p/sim/uvmt
     cmd: make gen_corev-dv test COREV=YES TEST=corev_jump_stress_test
     num: 2
+    iss: no
 
