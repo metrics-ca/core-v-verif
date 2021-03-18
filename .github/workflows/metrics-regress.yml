@@ -42,7 +42,7 @@ env:
      METRICS_CI_TOKEN: ${{ secrets.METRICS_CI_TOKEN }}
      METRICS_PROJECT_ID: ${{ secrets.METRICS_PROJECT_ID }}
      PR_NUMBER: ${{ github.event.pull_request.number }}
-	  
+
 jobs:
   cv32e40p_ci_check:
     runs-on: ubuntu-latest
