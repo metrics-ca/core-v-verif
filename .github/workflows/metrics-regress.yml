@@ -50,12 +50,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: ./bin/metrics-regress cv32e40p_ci_check_regression ${{ env.METRICS_PROJECT_ID }}
-    shell: bash
+        shell: bash
   cv32e40x_ci_check:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/cv32e40x/dev'
     steps:
       - uses: actions/checkout@v2
       - run: ./bin/metrics-regress cv32e40x_ci_check_regression ${{ env.METRICS_PROJECT_ID }}
-    shell: bash
+        shell: bash
 
